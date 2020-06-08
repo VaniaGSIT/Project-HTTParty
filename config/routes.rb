@@ -10,6 +10,8 @@ Rails.application.routes.draw do
   root "welcome#index"
   
   match 'searchgem', to: 'info#infogem', via: [:get, :post]
+  
+  match 'searchauthor', to: 'info#infoauthor', via: [:get, :post]
 
   resources :dependencies
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
